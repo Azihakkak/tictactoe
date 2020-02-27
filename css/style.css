@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy|Fredericka+the+Great|Homemade+Apple|IM+Fell+Double+Pica&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Kranky|Limelight|Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Arizonia|Frijole|Miltonian|Trade+Winds&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Chelsea+Market|Chewy|Emilys+Candy|Griffy|Knewave|Luckiest+Guy|Ribeye&display=swap');
+
+/*
+
+font-family: 'Aclonica', ;
+font-family: 'Emilys Candy', ;
+font-family: 'Chelsea Market', ;
+font-family: 'Ribeye', ;
+font-family: 'Griffy', ; */
+
+/* font-family: 'Arizonia', ;
+font-family: 'Trade Winds', ; */
+
+/* font-family: 'Poiret One', ;
+font-family: 'Limelight', ;
+
+Fredericka the Great */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+
+  background-image: url('https://wallpapercave.com/wp/wp1966308.jpg');
+}
+
+.slideInLeft {
+  animation-duration: 1s;
+
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+}
+
+
+header {
+
+  background-color: #101010;
+  color: beige;
+  text-align: center;
+  height: 150px;
+  margin: 0;
+  margin-top: 0;
+}
+
+h1 {
+  padding-top: 50px;
+  font-family: 'Limelight', sans-serif;
+  font-size: 300%;
+  letter-spacing: 1em;
+  opacity: 0.8;
+}
+
+.game-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 53px;
+}
+
+.box {
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Trade Winds', sans-serif;
+  font-weight: 800;
+  color: beige ;
+  opacity: 0.7;
+}
+
+
+
+#row-1, #row-2, #row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+button {
+  display: block;
+  margin: auto;
+  padding: 0;
+  margin-top: 50px;
+  width: 140px;
+  height: 40px;
+  background-color: pink;
+  font-size: 20px;
+  font-family: 'Chelsea Market';
+  letter-spacing: 0.1em;
+  color: black;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 100%;
+  border-radius: 0.8em;
+  border: 0;
+
+}
+
+.zoomIn {
+  animation-duration: 2s;
+  animation-delay: 0s;
+
+
+}
+
+.flipInX {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+.flipInY {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+#game-status {
+  color: #35ffec;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Aclonica';
+  letter-spacing: 0.3em;
+
+}
+
+.hidden {
+  visibility: hidden;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    letter-spacing: 0;
+  }
+  #game-status {
+    letter-spacing: 0.3em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
