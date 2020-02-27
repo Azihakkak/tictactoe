@@ -1,36 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Emilys+Candy|Fredericka+the+Great|Homemade+Apple|IM+Fell+Double+Pica&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Kranky|Limelight|Poiret+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Arizonia|Frijole|Miltonian|Trade+Winds&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Aclonica|Chelsea+Market|Chewy|Emilys+Candy|Griffy|Knewave|Luckiest+Guy|Ribeye&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Chelsea+Market|Limelight&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
-
   background-image: url('https://wallpapercave.com/wp/wp1966308.jpg');
-}
-
-.slideInLeft {
-  animation-duration: 1s;
-
 }
 
 .container {
   max-width: 100%;
   margin: 0;
 }
-.fadeIn {
-  animation-duration: 0.3s;
-}
 
 header {
-
   background-color: #101010;
   color: beige;
   text-align: center;
@@ -45,14 +29,6 @@ h1 {
   font-size: 300%;
   letter-spacing: 1em;
   opacity: 0.8;
-}
-
-.game-container {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 53px;
 }
 
 .box {
@@ -72,6 +48,20 @@ h1 {
   color: beige ;
   opacity: 0.7;
 }
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 53px;
+}
+
+#row-1, #row-2, #row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .three, .six, .nine {
   border-right: hidden;
 }
@@ -80,13 +70,6 @@ h1 {
   border-bottom: hidden;
 }
 
-#row-1, #row-2, #row-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-
-}
 button {
   display: block;
   margin: auto;
@@ -106,12 +89,32 @@ button {
   border: 0;
   outline: none;
 }
+
 button:hover {
   background-color: #fcff1a;
 	color: black;
 	font-size: 18px;
   box-sizing: border-box;
 	transition: 300ms linear;
+}
+
+#game-status {
+  color: #f7b5c0;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Chelsea Market';
+  letter-spacing: 0.3em;
+  transition-delay: 1s;
+}
+
+.slideInLeft {
+  animation-duration: 1s;
+}
+
+.fadeIn {
+  animation-duration: 0.3s;
 }
 
 .zoomIn {
@@ -129,25 +132,10 @@ button:hover {
   animation-delay: 0s;
 }
 
-#game-status {
-  color: #f7b5c0;
-  text-align: center;
-  margin-top: 30px;
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Chelsea Market';
-  letter-spacing: 0.3em;
-  transition-delay: 1s;
-
-}
-
 .hidden {
   visibility: hidden;
-
 }
 
-
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
     letter-spacing: 0;
@@ -156,16 +144,3 @@ button:hover {
     letter-spacing: 0.3em;
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
