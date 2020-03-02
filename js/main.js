@@ -11,12 +11,16 @@ $(document).ready(function() {
 
   const winCombo = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
 
+
   $('button').on('click', function () {
     $('.box').text('');
     $('#game-status').text('');
     board = ['_','_','_','_','_','_','_','_','_'];
+    start_game();
   });
 
+
+const start_game = function() {
   $('.box').on('click', function () {
       const id = this.id;
       if (board[id] === '_') {
@@ -34,7 +38,13 @@ $(document).ready(function() {
         currentPlayer = 'X';
       }
     }
+
   });
+};
+
+  start_game();
+
+
 
   const findWinner = function (currentPlayer) {
 
@@ -47,6 +57,7 @@ $(document).ready(function() {
       if (board[first] === board[middle] && board[middle] === board[last] && board[first] !== '_') {
        $('#game-status').text(`Player ${currentPlayer} Won`);
        $('#game-status').addClass('flipInX');
+       $('.box').off('click');
       }
 
       else {
@@ -57,5 +68,4 @@ $(document).ready(function() {
       }
     }
   }
-
 });
